@@ -18,7 +18,7 @@ type Props = {
 }
 
 const Person: NextPage<Props> = ({ person, cast }) => (
-    <main>
+    <main className="bg-zinc-700">
         <Header />
         <Breadcrumb title={person.name} />
         <PersonInfo

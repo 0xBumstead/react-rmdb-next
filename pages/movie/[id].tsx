@@ -20,7 +20,7 @@ type Props = {
 
 
 const Movie: NextPage<Props> = ({ movie, cast, directors }) => (
-    <main>
+    <main className="bg-zinc-700">
         <Header />
         <Breadcrumb title={movie.original_title} />
         <MovieInfo

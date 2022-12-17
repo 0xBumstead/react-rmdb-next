@@ -26,7 +26,7 @@ const Home: NextPage = () => {
   if (error) return <div>Something went wrong</div>
 
   return (
-    <main className="relative h-screen overflow-y-scroll" onScroll={handleScroll}>
+    <main className="relative h-screen overflow-y-scroll bg-zinc-700" onScroll={handleScroll}>
       <Header setQuery={setQuery} />
       {!query && data && data.pages ? (
         <Hero
