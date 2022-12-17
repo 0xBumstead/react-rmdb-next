@@ -13,3 +13,9 @@ export const convertMoney = (money: number): string => {
   });
   return formatter.format(money);
 };
+// Convert a date string into a nice format
+export const formatDate = (dateStr: string, region: string): string => {
+  const date = new Date(dateStr)
+  const formatter: Intl.DateTimeFormat = new Intl.DateTimeFormat(region)
+  return formatter.format(date)
+}

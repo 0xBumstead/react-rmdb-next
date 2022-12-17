@@ -24,8 +24,11 @@ export type Movies = {
 export type Cast = {
     character: string;
     credit_id: number;
+    id: number;
     name: string;
     profile_path: string;
+    title: string;
+    poster_path: string;
 }
 
 export type Crew = {
@@ -38,4 +41,18 @@ export type Credits = {
     id: number;
     cast: Cast[];
     crew: Crew[];
+}
+
+export type Person = {
+    id: number;
+    name: string;
+    biography: string;
+    popularity: number;
+    birthday: string;
+    profile_path: string;
+}
+
+export type MovieCredits = {
+    id: number;
+    cast: Cast[];
 }
